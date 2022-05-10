@@ -7,6 +7,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class T001seleniumGridTest {
@@ -20,6 +21,11 @@ public class T001seleniumGridTest {
 
             DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
             desiredCapabilities.setBrowserName("chrome");
+            desiredCapabilities.setCapability("browserVersion", "100.0");
+//            desiredCapabilities.setCapability("selenoid:options", Map.<String, Object>of(
+//                    "enableVNC", true,
+//                    "enableVideo", true
+//            ));
             desiredCapabilities.setPlatform(Platform.LINUX);
             driver = new RemoteWebDriver(new URL(nodeUrl), desiredCapabilities);
             driver.manage().deleteAllCookies();
