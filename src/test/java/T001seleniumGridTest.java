@@ -33,7 +33,7 @@ public class T001seleniumGridTest {
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
             driver.get("https://google.com");
-            driver.findElement(By.name("q")).sendKeys("selenium grid");
+            driver.findElement(By.name("q")).sendKeys("this test is being recorded");
             driver.findElement(By.name("btnK")).click();
             Thread.sleep(10000);
             driver.close();
