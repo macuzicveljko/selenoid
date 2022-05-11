@@ -17,7 +17,7 @@ public class T001seleniumGridTest {
 
         try {
             WebDriver driver;
-            String nodeUrl = "http://localhost:4444/wd/hub";
+            String nodeUrl = "http://172.17.0.1:4444/wd/hub";
 
             DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
             desiredCapabilities.setBrowserName("chrome");
@@ -50,7 +50,7 @@ public class T001seleniumGridTest {
 
         try {
             WebDriver driver;
-            String nodeUrl = "http://localhost:4444/wd/hub";
+            String nodeUrl = "http://172.17.0.1:4444/wd/hub";
 
             DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
             desiredCapabilities.setBrowserName("chrome");
@@ -78,7 +78,7 @@ public class T001seleniumGridTest {
 
         try {
             WebDriver driver;
-            String nodeUrl = "http://localhost:4444/wd/hub";
+            String nodeUrl = "http://172.17.0.1:4444/wd/hub";
 
             DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
             desiredCapabilities.setBrowserName("chrome");
