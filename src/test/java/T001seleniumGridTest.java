@@ -55,6 +55,11 @@ public class T001seleniumGridTest {
             DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
             desiredCapabilities.setBrowserName("chrome");
             desiredCapabilities.setPlatform(Platform.LINUX);
+               desiredCapabilities.setCapability("browserVersion", "100.0");
+            desiredCapabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                    "enableVNC", true,
+                    "enableVideo", true
+            ));
             driver = new RemoteWebDriver(new URL(nodeUrl), desiredCapabilities);
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
@@ -83,6 +88,11 @@ public class T001seleniumGridTest {
             DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
             desiredCapabilities.setBrowserName("chrome");
             desiredCapabilities.setPlatform(Platform.LINUX);
+               desiredCapabilities.setCapability("browserVersion", "100.0");
+            desiredCapabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                    "enableVNC", true,
+                    "enableVideo", true
+            ));
             driver = new RemoteWebDriver(new URL(nodeUrl), desiredCapabilities);
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
